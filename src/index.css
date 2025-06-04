@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 * {
   scroll-behavior: smooth;
 }
@@ -44,7 +45,7 @@ body {
 
   /* button component */
   .btn {
-    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300  transition-all active:scale-95 text-white mx-auto;
+    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300 transition-all active:scale-95 text-white mx-auto;
   }
 
   .btn-ping {
@@ -105,7 +106,7 @@ body {
   }
 
   .work-canvas {
-    @apply col-span-1 rounded-lg bg-black-200 border border-black-300;
+    @apply flex items-center justify-center col-span-1 rounded-lg bg-black-200 border border-black-300 py-2;
   }
 
   .work-content {
@@ -113,12 +114,13 @@ body {
   }
 
   .work-content_container {
-    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
+    @apply grid grid-cols-[auto_1fr] items-start gap-5 transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
   }
 
   .work-content_logo {
     @apply rounded-3xl w-16 h-16 p-2 bg-black-600;
   }
+  
 
   .work-content_bar {
     @apply flex-1 w-0.5 mt-4 h-full bg-black-300 group-hover:bg-black-500 group-last:hidden;
@@ -149,6 +151,24 @@ body {
   .social-icon {
     @apply w-12 h-12 rounded-full flex justify-center items-center bg-black-300 border border-black-200;
   }
+
+  .bubble {
+    @apply p-3 rounded-full bg-glassmorphism backdrop-blur-sm border border-white/10 shadow-tech-icon transition-all duration-300 hover:-translate-y-1;
+  }
+}
+
+.bg-glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.shadow-tech-icon {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1),
+    0 2px 4px rgba(255, 255, 255, 0.05) inset;
+}
+
+.shadow-tech-icon-hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15),
+    0 4px 6px rgba(255, 255, 255, 0.1) inset;
 }
 
 .waving-hand {
@@ -160,38 +180,158 @@ body {
 }
 
 .arrow-gradient {
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.1) 10%,
-    rgba(255, 255, 255, 0.000025) 50%,
-    rgba(255, 255, 255, 0.000025) 50%,
-    rgba(255, 255, 255, 0.025) 100%
-  );
+  background-image: linear-gradient(to right,
+      rgba(255, 255, 255, 0.1) 10%,
+      rgba(255, 255, 255, 0.000025) 50%,
+      rgba(255, 255, 255, 0.000025) 50%,
+      rgba(255, 255, 255, 0.025) 100%);
 }
 
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
   }
+
   15% {
     transform: rotate(14deg);
   }
+
   30% {
     transform: rotate(-8deg);
   }
+
   40% {
     transform: rotate(14deg);
   }
+
   50% {
     transform: rotate(-4deg);
   }
+
   60% {
     transform: rotate(10deg);
   }
+
   70% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(0deg);
+  }
+}
+
+/* Random floating animation */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(20px, 15px);
+  }
+
+  50% {
+    transform: translate(10px, -20px);
+  }
+
+  75% {
+    transform: translate(-15px, 10px);
+  }
+}
+
+/* Individual animations with different durations */
+.animate-float-1 {
+  top: 20%;
+  left: 15%;
+  animation: float 12s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  top: 30%;
+  left: 50%;
+  animation: float 15s ease-in-out infinite reverse;
+}
+
+.animate-float-3 {
+  top: 60%;
+  left: 20%;
+  animation: float 18s ease-in-out infinite;
+}
+
+.animate-float-4 {
+  top: 40%;
+  left: 70%;
+  animation: float 14s ease-in-out infinite reverse;
+}
+
+.animate-float-5 {
+  top: 70%;
+  left: 60%;
+  animation: float 16s ease-in-out infinite;
+}
+
+.animate-float-6 {
+  top: 20%;
+  left: 80%;
+  animation: float 13s ease-in-out infinite reverse;
+}
+
+.animate-float-7 {
+  top: 50%;
+  left: 30%;
+  animation: float 17s ease-in-out infinite;
+}
+
+.animate-float-8 {
+  top: 30%;
+  left: 40%;
+  animation: float 11s ease-in-out infinite reverse;
+}
+
+.animate-float-9 {
+  top: 80%;
+  left: 50%;
+  animation: float 19s ease-in-out infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .animate-float-1 {
+    left: 10%;
+  }
+
+  .animate-float-2 {
+    left: 40%;
+  }
+
+  .animate-float-3 {
+    left: 15%;
+  }
+
+  .animate-float-4 {
+    left: 60%;
+  }
+
+  .animate-float-5 {
+    left: 50%;
+  }
+
+  .animate-float-6 {
+    left: 70%;
+  }
+
+  .animate-float-7 {
+    left: 25%;
+  }
+
+  .animate-float-8 {
+    left: 35%;
+  }
+
+  .animate-float-9 {
+    left: 45%;
   }
 }
