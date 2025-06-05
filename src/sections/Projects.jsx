@@ -172,7 +172,7 @@ const Projects = () => {
                 </AnimatePresence>
               </div>
 
-              {/* Navigation (unchanged) */}
+              {/* Navigation (updated with PNG arrows) */}
               <div className="flex justify-between items-center mt-8">
                 <motion.button
                   onClick={() => handleNavigation('previous')}
@@ -180,9 +180,11 @@ const Projects = () => {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+                  <img
+                    src="assets/left-arrow.png"
+                    alt="Previous project"
+                    className="w-6 h-6 object-contain"
+                  />
                 </motion.button>
 
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -227,9 +229,11 @@ const Projects = () => {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 6L15 12L9 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+                  <img
+                    src="assets/right-arrow.png"
+                    alt="Next project"
+                    className="w-6 h-6 object-contain"
+                  />
                 </motion.button>
               </div>
             </div>

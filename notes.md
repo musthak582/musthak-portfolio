@@ -1,1 +1,0 @@
-ready player me - for create avater
