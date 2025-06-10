@@ -33,15 +33,15 @@ export const myProjects = [
     title: 'BrainDrop - Your Minimalist Note Companion',
     desc: 'BrainDrop is a lightweight, distraction-free note-taking app designed for speed and simplicity. Whether you are jotting down quick ideas or organizing tasks, BrainDrop helps you stay focused and productive. Features include real-time editing, autosave, and a clean interface optimized for both desktop and mobile.',
     texture: '/textures/project/project-1-video.mp4',
-    github: 'https://github.com/sujatagunale/braindrop',
-    live: 'https://braindrop.vercel.app/'
+    github: 'https://github.com/musthak582/notes-app',
+    live: 'https://notes-app-mu-peach.vercel.app/'
   },
   {
     title: 'InterVue AI – Your Personal AI Interview Coach',
     desc: 'InterVue AI is an intelligent interview preparation assistant that helps you practice, improve, and gain confidence for your next job interview. Powered by AI, it simulates real-world technical and behavioral interview questions tailored to your field, provides instant feedback, and suggests improvements — making you interview-ready anytime, anywhere.',
     texture: '/textures/project/project-2-video.mp4',
-    github: 'https://github.com/sujatagunale/intervue',
-    live: 'https://intervue.vercel.app/'
+    github: 'https://github.com/musthak582/intervue-ai',
+    live: 'https://intervue-ai-phi.vercel.app/'
   },
   {
     title: 'ResuMate – Build Stunning Resumes Effortlessly',
@@ -53,9 +53,9 @@ export const myProjects = [
   {
     title: 'CheatSheetCoder – Free Programming Cheat Sheets',
     desc: 'CheatSheetCoder is a curated platform offering free, concise, and easy-to-understand programming cheat sheets for developers. Whether you’re brushing up on syntax or learning something new, the clean UI and categorized sheets help you quickly find what you need across various languages and technologies.',
-    texture: '/textures/project/project-4-video.mp4', // update if needed
-    github: 'https://github.com/sujatagunale/cheatsheetcoder', // update if needed
-    live: 'https://cheatsheetcoder.vercel.app/' // update if needed
+    texture: '/textures/project/project-4-video.mp4',
+    github: 'https://github.com/musthak582/cheat-sheet-coder', 
+    live: 'https://cheatsheetcoder.vercel.app/'
   }
 ];
 
