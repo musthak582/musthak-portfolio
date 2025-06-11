@@ -47,8 +47,8 @@ export const myProjects = [
     title: 'ResuMate – Build Stunning Resumes Effortlessly',
     desc: 'ResuMate is a modern, user-friendly resume builder that enables users to create professional, ATS-friendly resumes in minutes. It offers customizable templates, real-time previews, and export options in PDF format. Designed with job seekers in mind, it simplifies the resume creation process with a clean interface and smart formatting.',
     texture: '/textures/project/project-3-video.mp4',
-    github: 'https://github.com/sujatagunale/resume-builder',
-    live: 'https://resume-builder.vercel.app/'
+    github: 'https://github.com/musthak582/resumate',
+    live: 'https://resumate-ochre.vercel.app/'
   },
   {
     title: 'CheatSheetCoder – Free Programming Cheat Sheets',
