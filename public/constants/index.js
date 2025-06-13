@@ -34,21 +34,21 @@ export const myProjects = [
     desc: 'BrainDrop is a lightweight, distraction-free note-taking app designed for speed and simplicity. Whether you are jotting down quick ideas or organizing tasks, BrainDrop helps you stay focused and productive. Features include real-time editing, autosave, and a clean interface optimized for both desktop and mobile.',
     texture: '/textures/project/project-1-video.mp4',
     github: 'https://github.com/musthak582/notes-app',
-    live: 'https://notes-app-mu-peach.vercel.app/'
+    live: 'https://braindropmk.vercel.app/'
   },
   {
     title: 'InterVue AI – Your Personal AI Interview Coach',
     desc: 'InterVue AI is an intelligent interview preparation assistant that helps you practice, improve, and gain confidence for your next job interview. Powered by AI, it simulates real-world technical and behavioral interview questions tailored to your field, provides instant feedback, and suggests improvements — making you interview-ready anytime, anywhere.',
     texture: '/textures/project/project-2-video.mp4',
     github: 'https://github.com/musthak582/intervue-ai',
-    live: 'https://intervue-ai-phi.vercel.app/'
+    live: 'https://intervuemkai-phi.vercel.app/'
   },
   {
     title: 'ResuMate – Build Stunning Resumes Effortlessly',
     desc: 'ResuMate is a modern, user-friendly resume builder that enables users to create professional, ATS-friendly resumes in minutes. It offers customizable templates, real-time previews, and export options in PDF format. Designed with job seekers in mind, it simplifies the resume creation process with a clean interface and smart formatting.',
     texture: '/textures/project/project-3-video.mp4',
     github: 'https://github.com/musthak582/resumate',
-    live: 'https://resumate-ochre.vercel.app/'
+    live: 'https://resumatemk.vercel.app/'
   },
   {
     title: 'CheatSheetCoder – Free Programming Cheat Sheets',
