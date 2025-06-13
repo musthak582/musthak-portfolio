@@ -59,17 +59,17 @@ const Footer = () => {
         className="flex gap-3"
         variants={item}
       >
-        {['github', 'twitter', 'linkedin'].map((social) => (
+        {[{ icon: 'github', link: "https://github.com/musthak582" }, { icon: 'linkedin', link: "https://www.linkedin.com/in/mohammed-musthak" }].map((social) => (
           <motion.div
-            key={social}
+            key={social.icon}
             className="social-icon"
             variants={socialIcon}
             whileHover="hover"
           >
-            <a href="" className="flex items-center justify-center">
+            <a href={social.link} target="_blank" className="flex items-center justify-center">
               <motion.img
-                src={`assets/${social}-original.svg`}
-                alt={social}
+                src={`assets/${social.icon}-original.svg`}
+                alt={social.icon}
                 className="w-6 h-6"
                 whileHover={{ rotate: 15 }}
               />
