@@ -41,7 +41,7 @@ export const myProjects = [
     desc: 'InterVue AI is an intelligent interview preparation assistant that helps you practice, improve, and gain confidence for your next job interview. Powered by AI, it simulates real-world technical and behavioral interview questions tailored to your field, provides instant feedback, and suggests improvements — making you interview-ready anytime, anywhere.',
     texture: '/textures/project/project-2-video.mp4',
     github: 'https://github.com/musthak582/intervue-ai',
-    live: 'https://intervuemkai-phi.vercel.app/'
+    live: 'https://intervueaimk.vercel.app/'
   },
   {
     title: 'ResuMate – Build Stunning Resumes Effortlessly',
